@@ -1,4 +1,4 @@
-BH.pm
+BHPM
 =====
 
 Site Belo Horizonte Perl Mongers
