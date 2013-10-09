@@ -27,9 +27,9 @@
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Contato</a></li>
+          <li class="active"><a href="[% request.uri_base %]">Home</a></li>
+          <li><a href="[% request.uri_base %]/sobre">Sobre</a></li>
+          <li><a href="[% request.uri_base %]/contato">Contato</a></li>
         </ul>
         <h3 class="text-muted"><img src="[% request.uri_base %]/images/bh.160x36.png"></h3>
       </div>
@@ -40,8 +40,9 @@
         <p><a class="btn btn-lg btn-success" href="#">Sign up today</a></p>
       </div>
       
-      
+      <div class="container">
       [% content %]
+      </div>
 
 
       <div class="footer">

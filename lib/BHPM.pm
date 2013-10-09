@@ -7,4 +7,12 @@ get '/' => sub {
     template 'index';
 };
 
+get '/sobre' => sub {
+    template 'sobre';
+};
+
+get '/contato' => sub {
+    template 'contato';
+};
+
 true;
