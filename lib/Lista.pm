@@ -36,7 +36,16 @@ post '/cadastrar' => sub {
   my $resultado = $mech->content;
   $resultado =~ m{<\/h1>\n(.*?)\n<hr>}s;
   
-  return $1;
+  my $mensagem = $1;
+  
+  if($mensagem =~ /Sua requisição de inscrição foi recebida e será agilizada logo/){
+    my $sth = database->prepare(
+        'INSERT INTO usuario (usu_nome, usu_email, usu_data) VALUES (?, ?, NOW())'
+    );
+    $sth->execute($usu_nome, $usu_email);
+  }
+  
+  template 'cadastrar', {mensagem => $mensagem};
 };
 
 1;
