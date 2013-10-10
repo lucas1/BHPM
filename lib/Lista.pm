@@ -9,7 +9,7 @@ get '/' => sub {
   template 'lista';
 };
 
-post '/cadastrar' => {
+post '/cadastrar' => sub {
   my $usu_nome = param 'nome' || '';
   my $usu_email = param 'email' || '';
   my $usu_senha = param 'senha' || '';
