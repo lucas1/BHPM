@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Belo Horizonte Perl Mongers</title>
+    <title>Belo Horizonte Perl Mongers - [% config.appname %]</title>
 
     <!-- Bootstrap core CSS -->
     <link href="[% request.uri_base %]/css/bootstrap.css" rel="stylesheet">
