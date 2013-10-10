@@ -4,7 +4,7 @@ use Dancer2;
 prefix '/lista';
 
 get '/' => sub {
-  return 'ok';
+  template 'lista';
 };
 
 1;
