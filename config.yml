@@ -27,3 +27,12 @@ engines:
        start_tag: '[%'
        end_tag:   '%]'
 
+# config database
+plugins:
+    Database:
+        driver: 'mysql'
+        database: 'bhpm'
+        host: 'localhost'
+        port: 3306
+        username: 'bhpm'
+        password: 'senhabhpm'
