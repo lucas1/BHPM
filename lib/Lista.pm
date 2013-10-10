@@ -10,10 +10,10 @@ get '/' => sub {
 };
 
 post '/cadastrar' => {
-  my $nome = param->{nome} || '';
-  my $email = param->{email} || '';
-  my $senha = param->{senha} || '';
-  my $confirme = param->{confirme} || '';
+  my $usu_nome = param 'nome' || '';
+  my $usu_email = param 'email' || '';
+  my $usu_senha = param 'senha' || '';
+  my $usu_confirme = param 'confirme' || '';
   
   my $mech = WWW::Mechanize->new(
       autocheck => 0
@@ -22,10 +22,10 @@ post '/cadastrar' => {
   $mech->post(
       'http://mail.pm.org/mailman/subscribe/bh-pm',
       [
-        email => $email,
-        fullname => $nome,
-        pw => $senha,
-        'pw-conf' => $confirme,
+        email => $usu_email,
+        fullname => $usu_nome,
+        pw => $usu_senha,
+        'pw-conf' => $usu_confirme,
         language => 'pt_BR',
         digest => 0,
         'email-button' => 'Inscrever'
