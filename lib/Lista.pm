@@ -22,12 +22,12 @@ post '/cadastrar' => sub {
   $mech->post(
       'http://mail.pm.org/mailman/subscribe/bh-pm',
       [
-        email => $usu_email,
-        fullname => $usu_nome,
-        pw => $usu_senha,
+        'email' => $usu_email,
+        'fullname' => $usu_nome,
+        'pw' => $usu_senha,
         'pw-conf' => $usu_confirme,
-        language => 'pt_BR',
-        digest => 0,
+        'language' => 'pt_BR',
+        'digest' => 0,
         'email-button' => 'Inscrever'
       ]
   );
