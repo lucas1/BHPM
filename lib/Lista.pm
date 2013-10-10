@@ -14,6 +14,7 @@ post '/cadastrar' => sub {
   my $usu_email = param 'email';
   my $usu_senha = param 'senha';
   my $usu_confirme = param 'confirme';
+  my $usu_digest = param 'digest';
   
   my $mech = WWW::Mechanize->new(
       autocheck => 0
@@ -27,7 +28,7 @@ post '/cadastrar' => sub {
         'pw' => $usu_senha,
         'pw-conf' => $usu_confirme,
         'language' => 'pt_BR',
-        'digest' => 0,
+        'digest' => $digest,
         'email-button' => 'Inscrever'
       ]
   );
