@@ -1,1 +1,20 @@
- 
+<form role="form" action="/lista/cadastrar" method="post">
+  <div class="form-group">
+    <label for="nome">Nome:</label>
+    <input type="text" class="form-control" id="nome" placeholder="digite seu nome">
+  </div>
+  <div class="form-group">
+    <label for="email">E-mail:</label>
+    <input type="text" class="form-control" id="email" placeholder="digite seu email">
+  </div>
+	<div class="form-group">
+    <label for="senha">Senha:</label>
+    <input type="text" class="form-control" id="senha" placeholder="digite sua senha">
+  </div>
+	<div class="form-group">
+    <label for="confirme">Confirme:</label>
+    <input type="text" class="form-control" id="confirme" placeholder="confirme sua senha">
+  </div>
+
+  <button type="submit" class="btn btn-default">Enviar</button>
+</form>
