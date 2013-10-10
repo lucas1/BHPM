@@ -28,7 +28,7 @@ post '/cadastrar' => sub {
         'pw' => $usu_senha,
         'pw-conf' => $usu_confirme,
         'language' => 'pt_BR',
-        'digest' => $digest,
+        'digest' => $usu_digest,
         'email-button' => 'Inscrever'
       ]
   );
