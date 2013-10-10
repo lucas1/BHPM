@@ -1,4 +1,4 @@
-packeage Lista;
+package Lista;
 use Dancer2;
 
 prefix '/lista';
