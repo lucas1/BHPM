@@ -28,6 +28,7 @@
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="[% request.uri_base %]">Home</a></li>
           <li><a href="[% request.uri_base %]/sobre">Sobre</a></li>
+          <li><a href="http://mail.pm.org/mailman/listinfo/bh-pm">Lista</a></li>
           <li><a href="[% request.uri_base %]/contato">Contato</a></li>
         </ul>
         <h3 class="text-muted"><img src="[% request.uri_base %]/images/bh.160x36.png"></h3>
