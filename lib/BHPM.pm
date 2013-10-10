@@ -1,7 +1,8 @@
 package BHPM;
 use Dancer2;
+use Lista;
 
-our $VERSION = '0.1';
+prefix undef;
 
 get '/' => sub {
     template 'index';
