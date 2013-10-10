@@ -32,7 +32,10 @@ post '/cadastrar' => sub {
       ]
   );
   
-  return $mech->content;
+  my $resultado = $mech->content;
+  $resultado =~ m{<\/h1>\n(.*?)\n<hr>}s;
+  
+  return $1;
 };
 
 1;
