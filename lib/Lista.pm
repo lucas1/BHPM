@@ -10,10 +10,10 @@ get '/' => sub {
 };
 
 post '/cadastrar' => sub {
-  my $usu_nome = param 'nome' || '';
-  my $usu_email = param 'email' || '';
-  my $usu_senha = param 'senha' || '';
-  my $usu_confirme = param 'confirme' || '';
+  my $usu_nome = param 'nome';
+  my $usu_email = param 'email';
+  my $usu_senha = param 'senha';
+  my $usu_confirme = param 'confirme';
   
   my $mech = WWW::Mechanize->new(
       autocheck => 0
