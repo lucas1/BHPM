@@ -34,11 +34,13 @@
         <h3 class="text-muted"><img src="[% request.uri_base %]/images/bh.160x36.png"></h3>
       </div>
 
+      [% IF request.path == '/' %]
       <div class="jumbotron">
         <h1>BHPM</h1>
         <p class="lead">Site Belo Horizonte Perl Mongers</p>
         <p><a class="btn btn-lg btn-success" href="#">Sign up today</a></p>
       </div>
+      [% END %]
       
       <div class="container">
       [% content %]
