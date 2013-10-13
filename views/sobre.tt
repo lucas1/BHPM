@@ -7,12 +7,17 @@ representar os Mineiros.</p>
 
 <p>Tudo aqui funciona de forma colaborativa, percebeu algo que não gostou e/ou que queira acrescentar, fique à vontade.</p>
 
-<p>Nosso site fica disponível no github:</p>
+<blockquote>
 
-<p><a href="https://github.com/lucas1/BHPM">clique aqui</a></p>
+  <p>Nosso site fica disponível no github:</p>
+  
+  <small><a href="https://github.com/lucas1/BHPM">clique aqui</a></small>
+</blockquote>
+<blockquote>  
+  <p>Lista para comunicação através de e-mails:</p>
+  
+  <small><a href="http://mail.pm.org/mailman/listinfo/bh-pm">clique aqui</a></small>
 
-<p>Lista para comunicação através de e-mails:</p>
-
-<p><a href="http://mail.pm.org/mailman/listinfo/bh-pm">clique aqui</a></p>
+</blockquote>
 
 <p>Bem vindos à NOSSA comunidade Perl Mongers.</p>
