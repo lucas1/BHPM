@@ -29,6 +29,7 @@
           <li[% IF request.path == '/' %] class="active"[% END %]><a href="[% request.uri_base %]">Home</a></li>
           <li[% IF request.path == '/sobre' %] class="active"[% END %]><a href="[% request.uri_base %]/sobre">Sobre</a></li>
           <li[% IF request.path == '/lista' %] class="active"[% END %]><a href="[% request.uri_base %]/lista">Lista</a></li>
+          <li[% IF request.path == '/colaboradores' %] class="active"[% END %]><a href="[% request.uri_base %]/colaboradores">Colaboradores</a></li>
           <li[% IF request.path == '/contato' %] class="active"[% END %]><a href="[% request.uri_base %]/contato">Contato</a></li>
         </ul>
         <h3 class="text-muted"><img src="[% request.uri_base %]/images/bh.160x36.png"></h3>

@@ -16,4 +16,8 @@ get '/contato' => sub {
     template 'contato';
 };
 
+get '/colaboradores' => sub {
+    template 'colaboradores';
+};
+
 true;
