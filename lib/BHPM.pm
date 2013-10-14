@@ -8,7 +8,7 @@ prefix undef;
 get '/' => sub {
     my $mech = WWW::Mechanize->new;
     
-    $mech->get('');
+    $mech->get('http://www.perl.org/');
     
     my $content = $mech->content;
     
