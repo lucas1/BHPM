@@ -13,12 +13,12 @@ get '/' => sub {
     my $content = $mech->content;
     
     $content =~ m{CPAN<\/a><\/li>(.*?)<\/ul>}s;
-    $update = $1;
+    my $update = $1;
     $update =~ s/http:\/\/search\.cpan\.org\/~.*\//https:\/\/metacpan\.org\/module\//gs;
     $update =~ s/-[0-9].*$//gs;
     
     $content =~ m{Perl News<\/a><\/li>(.*?)<\/ul>}s;
-    $news = $1;
+    my $news = $1;
     
     
     template 'index', {update => $update, news => $news};
