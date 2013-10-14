@@ -4,7 +4,7 @@
 <div class="row">
   <div class="col-md-6">
     <p><img class="img-circle" alt="140x140" src="[% request.uri_base %]/images/140×140.png" data-src="holder.js/140x140" style="width: 140px; height: 140px;"></img></p>
-    <p>Lucas Moraes- Sul de minas???</p>  
+    <p>Lucas Moraes - Cambuí</p>  
   </div>
   <div class="col-md-6">
     <p><img class="img-circle" alt="140x140" src="[% request.uri_base %]/images/140×140.png" data-src="holder.js/140x140" style="width: 140px; height: 140px;"></img></p>
