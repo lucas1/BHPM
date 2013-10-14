@@ -14,10 +14,11 @@ get '/' => sub {
     
     $content =~ m{CPAN<\/a><\/li>(.*?)<\/ul>}s;
     my $update = $1;
-    $update =~ s/<a /<a target="_blank"/gs;
+    $update =~ s/<a /<a target="_blank" /gs;
     
     $content =~ m{Perl News<\/a><\/li>(.*?)<\/ul>}s;
     my $news = $1;
+    $news =~ s/<a /<a target="_blank" /gs;
     
     
     template 'index', {update => $update, news => $news};
