@@ -14,9 +14,6 @@ get '/' => sub {
     
     $content =~ m{CPAN<\/a><\/li>(.*?)<\/ul>}s;
     my $update = $1;
-    $update =~ s/http:\/\/search\.cpan\.org\/[.*]{1,}\//https:\/\/metacpan\.org\/module\//gs;
-    $update =~ s/-[0-9]{1,}\.[0-9]{1,}//gs;
-    $update =~ s/-/::/gs;
     
     $content =~ m{Perl News<\/a><\/li>(.*?)<\/ul>}s;
     my $news = $1;
