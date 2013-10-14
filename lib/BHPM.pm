@@ -12,9 +12,14 @@ get '/' => sub {
     
     my $content = $mech->content;
     
-    $content =~ m{Perl News<\/a><\/li>(.*?)<\/ul>}s;
+    $content =~ m{CPAN<\/a><\/li>(.*?)<\/ul>}s;
+    $update = $1;
     
-    template 'index', {news => $1};
+    $content =~ m{Perl News<\/a><\/li>(.*?)<\/ul>}s;
+    $news = $1;
+    
+    
+    template 'index', {update => $update, news => $news};
 };
 
 get '/sobre' => sub {
