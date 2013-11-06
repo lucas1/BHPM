@@ -1,4 +1,6 @@
-<h4>Cadastrar na lista BHPM</h4>
+<h3>Cadastrar na lista BHPM</h3>
+
+<hr>
 
 <form role="form" action="/lista/cadastrar" method="post">
   <div class="form-group">
