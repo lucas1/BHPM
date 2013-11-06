@@ -39,7 +39,11 @@
       <div class="jumbotron">
         <h1>BHPM</h1>
         <p class="lead">Site Belo Horizonte Perl Mongers</p>
-        <p><a class="btn btn-lg btn-success" href="http://mail.pm.org/mailman/listinfo/bh-pm">Lista</a></p>
+        <p>
+          <a class="btn btn-lg btn-success" href="http://mail.pm.org/mailman/listinfo/bh-pm">Quero participar da Lista</a>
+          <br>
+          Entre para nossa lista agora mesmo
+        </p>
       </div>
       [% END %]
       
