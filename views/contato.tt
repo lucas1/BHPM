@@ -1,4 +1,8 @@
-<form role="form">
+<h3>Contato</h3>
+
+<hr>
+
+<form role="form" method="post" action="/contato">
   <div class="form-group">
     <label for="nome">Nome:</label>
     <input type="text" class="form-control" id="nome" placeholder="digite seu nome">
